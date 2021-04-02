@@ -1,0 +1,20 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://node02:7902/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 10092
+spring:
+  application:
+    name: ServiceClient
+  boot:
+    admin:
+      client:
+        url: 'http://localhost:8081'

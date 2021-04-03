@@ -14,8 +14,10 @@ server:
 spring:
   application:
     name: ServiceClient
-    test-property: TestPropertyValue
   boot:
     admin:
       client:
         url: 'http://localhost:8081'
+
+custom:
+  testProperty: TestPropertyValue
